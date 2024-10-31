@@ -1,0 +1,47 @@
+/* new posts popup */
+.new_posts_popup .content { font-size: 1.2em; padding: 6px 3px 6px 3px;
+	overflow: hidden; white-space: nowrap; }
+.new_posts_popup .content:hover { background: #000; }
+.new_posts_popup .content .s { font-size: 0.8em; }
+.new_posts_popup .content .elapsed { color: #448; font-weight: bold; }
+.new_posts_popup .content .newcomments { color: #080; }
+.new_posts_popup .content a:visited { color: #B85B5A; }
+.new_posts_popup .content a.read { color: #B85B5A; }
+.new_posts_popup .content a.unread { color: #0066B2; }
+.new_posts_popup .content a.unread:visited { color: #B85B5A; }
+
+/* rounded window */
+.rwtop, .rwbottom {display:block; background:transparent; font-size:1px;}
+.rw1, .rw2, .rw3, .rw4 {display:block; overflow:hidden;}
+.rw1, .rw2, .rw3 {height:1px;}
+.rw2, .rw3, .rw4 {background:transparent;}
+.rw1 {margin:0 5px;}
+.rw2 {margin:0 3px; border-width:0 2px;}
+.rw3 {margin:0 2px;}
+.rw4 {height:2px; margin:0 1px;}
+
+.roundedwindowcontent {display:block; height:auto; padding: 0px 5px 0px 5px;}
+* html .roundedwindowcontent {height:1px;}
+/* rounded window */
+
+.roundedwindow {
+	position: relative;
+	z-index: 2;
+
+	opacity:0.6; /* normal */
+	filter: alpha(opacity=60); /* ie bullcrap */
+	-moz-opacity:0.6; /* ancient mozilla */
+	-khtml-opacity:0.6; /* ancient mozilla */
+	
+	top: 74px;
+	left: 428px;
+/*	height: 106px;*/
+	width: 338px;
+}
+.roundedwindow_inner {padding:4px;}
+.roundedwindow_bg {background:#111;}
+.roundedwindow_bd {border-left:1px solid #000; border-right:1px solid #000;}
+.roundedwindow_bd2 {background:#000;}
+.roundedwindow_bd3 {border:1px solid #000;}
+.roundedwindow_fg {color:#888;}
+/* new posts popup */
